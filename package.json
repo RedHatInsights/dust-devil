@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "fmt": "prettier \"lib/**/*.{ts,tsx}\" --write",
-    "lint": "eslint \"lib/**/*.{ts,tsx}\""
+    "lint": "eslint \"lib/**/*.{ts,tsx}\"",
+    "prepare": "npm run fmt && npm run lint && npm run build",
+    "prepack": "npm run prepare"
   },
   "repository": {
     "type": "git",
