@@ -40,14 +40,26 @@
       }
     },
     "clearMocks": true,
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "/dist/",
+      "/node_modules/"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@jest/globals": "^29.4.2",
     "@patternfly/react-core": "^4.276.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/react": "^18.0.28",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "babel-jest": "^29.4.2",
@@ -58,6 +70,7 @@
     "jest-environment-jsdom": "^29.4.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "typescript": "^4.9.5"
   },
   "peerDependencies": {

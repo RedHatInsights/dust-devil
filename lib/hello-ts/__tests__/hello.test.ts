@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
-import { ts } from '../hello';
+import { hello } from '../hello';
 
 describe('Hello', () => {
   it('returns hello', () => {
-    expect('Hello, TS!').toEqual(ts());
+    expect('Hello, test!').toEqual(hello('test'));
   });
 });

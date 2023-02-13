@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es5",
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "jsx": "preserve"
   },
   "include": [
     "lib/**/*"
+  ],
+  "exclude": [
+    "lib/**/__tests__/**/*"
   ]
 }
